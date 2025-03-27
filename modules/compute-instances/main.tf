@@ -11,7 +11,7 @@ resource "google_compute_instance" "default" {
 
   boot_disk {
     initialize_params {
-      image = "debian-cloud/debian-11"
+      image = var.image
       labels = {
         my_label = "value"
       }
