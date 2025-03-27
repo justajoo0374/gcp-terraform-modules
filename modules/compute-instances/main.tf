@@ -21,3 +21,9 @@ resource "google_compute_instance" "default" {
     network = "default"
 }
 }
+
+###############varirables
+variable "project_id" {}
+variable "instance"  {}
+variable "machine_type" {}
+variable "zone" {}
