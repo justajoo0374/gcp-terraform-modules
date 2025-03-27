@@ -4,7 +4,7 @@ provider "google" {
 }
 
 resource "google_compute_instance" "default" {
-  name         = "my-instance1"
+  name         = "my-instance15"
   machine_type = "n2-standard-2"
   zone         = "us-central1-a"
   project = "magnetic-flare-454316-h0"
