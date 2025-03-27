@@ -1,13 +1,5 @@
-terraform {
-  required_providers {
-    google = {
-      source = "hashicorp/google"
-      version = "6.27.0"
-    }
-  }
-}
-
 provider "google" {
+  source = "hashicorp/google"
   project = "magnetic-flare-454316-h0"
 
   # Configuration options
