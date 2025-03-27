@@ -6,7 +6,7 @@ provider "google" {
 resource "google_compute_instance" "default" {
   name         = var.instance
   machine_type = var.machine_type
-  region = "us-central1"
+  region = var.region
   zone         = var.zone
   tags = ["foo", "bar"]
 
@@ -28,3 +28,4 @@ variable "project_id" {}
 variable "instance"  {}
 variable "machine_type" {}
 variable "zone" {}
+variable "region" {}
