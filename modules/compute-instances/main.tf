@@ -1,7 +1,5 @@
 provider "google" {
   source = "hashicorp/google"
-  project = "magnetic-flare-454316-h0"
-
   # Configuration options
 }
 
