@@ -8,6 +8,8 @@ terraform {
 }
 
 provider "google" {
+  project = "magnetic-flare-454316-h0"
+
   # Configuration options
 }
 
@@ -15,6 +17,7 @@ resource "google_compute_instance" "default" {
   name         = "my-instance"
   machine_type = "n2-standard-2"
   zone         = "us-central1-a"
+  project = "magnetic-flare-454316-h0"
 
   tags = ["foo", "bar"]
 
